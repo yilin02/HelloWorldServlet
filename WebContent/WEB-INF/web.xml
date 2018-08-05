@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HelloWorldServlet</display-name>
+ <servlet>
+  <!-- 当前servlet的名称 -->
+  <servlet-name>Hello</servlet-name>
+   <!-- servlet所在的包名跟类名 -->
+  <servlet-class>packageone.Hello</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <!-- 必须于上一个servlet标签中的名称保持一致 -->
+  <servlet-name>Hello</servlet-name>
+  <!-- 这是你在浏览器上访问的地址,必须要提 /servlet/xxxx 格式，不然tomcat启动会报错-->
+  <url-pattern>/servlet/helloworld</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
